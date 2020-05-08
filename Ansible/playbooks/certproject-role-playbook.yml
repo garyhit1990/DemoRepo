@@ -1,8 +1,8 @@
 ---
 - hosts: workers
-  become: true
-  become_user: root
-  become_user: ansible
+  ansible_become: true
+  ansible_become_user: root
+  ansible_become_password: Wipro@123
   tasks:
   - name: Install Docker
     yum: name=docker state=installed
