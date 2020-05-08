@@ -2,6 +2,7 @@
 - hosts: workers
   become: true
   become_user: root
+  tasks:
   - name: Install Docker
     yum: name=docker state=installed
   - name: Start Docker services
