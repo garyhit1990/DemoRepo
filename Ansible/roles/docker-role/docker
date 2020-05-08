@@ -1,1 +1,8 @@
-gggg
+---
+  - name: Install Docker
+    yum: name=docker state=installed
+  - name: Start Docker services
+    service: name=docker state=started
+  - name: Create directory for Docker files
+    file: path=/root/docker-certproject state=directory
+  
