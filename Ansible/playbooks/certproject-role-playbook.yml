@@ -1,6 +1,6 @@
 ---
-- hosts: webservers
+- hosts: workers
   become: true
   become_user: root
   roles:
-  - addressbook
+  - docker-role
