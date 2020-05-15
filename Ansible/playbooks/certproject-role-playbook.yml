@@ -9,3 +9,5 @@
     service: name=docker state=started
   - name: Create directory for Docker files
     file: path=/root/docker-certproject state=directory
+  - name: Install git
+    yum: name=git state=installed
