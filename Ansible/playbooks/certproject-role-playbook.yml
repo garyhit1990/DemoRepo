@@ -11,3 +11,5 @@
     file: path=/root/docker-certproject state=directory
   - name: Install git
     yum: name=git state=installed
+  roles:
+  - - koichirok.chromedriver
