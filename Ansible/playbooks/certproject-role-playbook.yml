@@ -12,4 +12,5 @@
   - name: Install git
     yum: name=git state=installed
   roles:
-    - koichirok.chromedriver
+    - marverix.chromium
+
