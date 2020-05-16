@@ -11,6 +11,18 @@
     file: path=/root/docker-certproject state=directory
   - name: Install git
     yum: name=git state=installed
-  roles:
-    - marverix.chromium
+ ---
+ - hosts: workers
+  become: true
+  become_user: root
+  tasks:
+- git:
+    repo: 'https://github.com/edureka-devops/projCert.git'
+    dest: /var/www/html
+- git:
+    repo: 'https://github.com/edureka-devops/Selenium_module.git'
+    dest: /devops/projCert/docker/dockerfile
+- git:
+    repo: 'https://github.com/edureka-devops/projDock.git'
+    dest: /devops/projCert/Selenium_module
 
