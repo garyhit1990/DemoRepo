@@ -4,6 +4,7 @@
   become_user: root
   roles:
     - marverix.chromium
+    - wunzeco.google-chrome
   tasks:
   - name: Install Git
     yum:
