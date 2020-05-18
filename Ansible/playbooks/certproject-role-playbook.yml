@@ -22,9 +22,9 @@
      dest: /var/www/html
   - git:
      repo: 'https://github.com/edureka-devops/Selenium_module.git'
-     dest: /devops/projCert/docker/dockerfile
+     dest: /devops/projCert/Selenium_module
   - git:
      repo: 'https://github.com/edureka-devops/projDock.git'
-     dest: /devops/projCert/Selenium_module
+     dest: /devops/projCert/docker/dockerfile
 
 
