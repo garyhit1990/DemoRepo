@@ -20,7 +20,7 @@
       state: directory
   - git:
      repo: 'https://github.com/edureka-devops/projCert.git'
-     dest: /var/www/html
+     dest: /var/www/php
   - git:
      repo: 'https://github.com/edureka-devops/Selenium_module.git'
      dest: /devops/projCert/Selenium_module
